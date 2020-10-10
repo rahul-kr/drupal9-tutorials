@@ -1,0 +1,32 @@
+custom_page:
+  path: '/test/page'
+  defaults:
+    _controller: '\Drupal\custom_page\Controller\CustomController::dummyPage'
+                  # Namespace                                      Function Name 
+   
+  requirements:
+  # Minimal permission user must have
+    _permission: 'access content'
+
+custom_page.welcome_controller_index:
+  path: '/welcome-d9'
+  defaults:
+    _controller: '\Drupal\custom_page\Controller\WelcomeController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    
+custom_page.custom_dummy_form:
+  path: '/custom_page/form/custom'
+  defaults:
+    _form: '\Drupal\custom_page\Form\CustomForm'
+    _title: 'CustomForm'
+  requirements:
+    _access: 'TRUE'
+custom_page.dummy_custom_form:
+  path: '/custom_page/form/default'
+  defaults:
+    _form: '\Drupal\custom_page\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'

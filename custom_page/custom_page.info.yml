@@ -1,0 +1,12 @@
+name: D9 Create Custom Page
+description: Sample code for creating a custom page using custom module.
+core_version_requirement: ^8.8 || ^9
+# This key is supported only above 8.7
+type: module
+# At a minimum you must provide
+
+package: D9 Learning
+# Define dependecies if any
+dependencies:
+  - drupal:node
+
